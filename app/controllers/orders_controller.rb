@@ -38,6 +38,9 @@ class OrdersController < ApplicationController
     @product = Product.find(@order.product_id)
   end
 
+  def index
+    @orders = current_user.orders.all # ユーザーに紐付いた注文履歴を表示
+  end
 
 
 
