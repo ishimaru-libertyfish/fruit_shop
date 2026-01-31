@@ -16123,3 +16123,1608 @@ Processing by HomesController#top as TURBO_STREAM
 Completed 200 OK in 13ms (Views: 5.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FruitShop'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FruitShop'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FruitShop'*/[0m
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:03:30 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FruitShop'*/[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (3.0ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.6ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 186.3ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 8.7ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 228.4ms | GC: 0.0ms)
+Completed 200 OK in 263ms (Views: 221.4ms | ActiveRecord: 12.2ms (15 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MywicHVyIjoiYmxvYl9pZCJ9fQ==--5f1359ecc7711aca92eeb8a6308e0abd4944b77d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlsxNTAsMTUwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--89c18f45b3efbf4be06a91b7e6e68c46729c028a/han0215-049.jpg" for 127.0.0.1 at 2026-02-01 02:03:31 +0900
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MywicHVyIjoiYmxvYl9pZCJ9fQ==--5f1359ecc7711aca92eeb8a6308e0abd4944b77d", "variation_key" => "[FILTERED]", "filename" => "han0215-049"}
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--278dd7113086e38d351847cfc5b3985215385952/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOlsxNTAsMTUwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--d517e51d42acf619622caafd418df93ad92be295/Rails%E7%94%BB%E5%83%8F.png" for 127.0.0.1 at 2026-02-01 02:03:31 +0900
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NSwicHVyIjoiYmxvYl9pZCJ9fQ==--03a09ed5f87acfa5bc6ef6d4fddd80a8655010bd/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlsxNTAsMTUwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--89c18f45b3efbf4be06a91b7e6e68c46729c028a/RubyLogo.png" for 127.0.0.1 at 2026-02-01 02:03:31 +0900
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'ActiveStorage::VariantRecord' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 4 LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+[36m  Disk Storage (1.6ms) [0m[34mGenerated URL for file at key: 38cdet2xcbqahzgnwrnxn3ny0bs6 (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIzOGNkZXQyeGNicWFoemdud3JueG4zbnkwYnM2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaGFuMDIxNS0wNDkuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnaGFuMDIxNS0wNDkuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNTA5WiIsInB1ciI6ImJsb2Jfa2V5In19--dbd5989e952020f5851b2bc8d2a75f0b0cf2dcbc/han0215-049.jpg)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIzOGNkZXQyeGNicWFoemdud3JueG4zbnkwYnM2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaGFuMDIxNS0wNDkuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnaGFuMDIxNS0wNDkuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNTA5WiIsInB1ciI6ImJsb2Jfa2V5In19--dbd5989e952020f5851b2bc8d2a75f0b0cf2dcbc/han0215-049.jpg
+Completed 302 Found in 127ms (ActiveRecord: 1.2ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NywicHVyIjoiYmxvYl9pZCJ9fQ==--92474223ced822d081bcfee46004444bdeaa0c76/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlsxNTAsMTUwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--89c18f45b3efbf4be06a91b7e6e68c46729c028a/RubyLogo.png" for 127.0.0.1 at 2026-02-01 02:03:31 +0900
+Processing by ActiveStorage::Representations::RedirectController#show as PNG
+  Parameters: {"signed_blob_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--278dd7113086e38d351847cfc5b3985215385952", "variation_key" => "[FILTERED]", "filename" => "Rails画像"}
+Processing by ActiveStorage::Representations::RedirectController#show as PNG
+  Parameters: {"signed_blob_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NSwicHVyIjoiYmxvYl9pZCJ9fQ==--03a09ed5f87acfa5bc6ef6d4fddd80a8655010bd", "variation_key" => "[FILTERED]", "filename" => "RubyLogo"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'ActiveStorage::VariantRecord' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 2 LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+[36m  Disk Storage (1.2ms) [0m[34mGenerated URL for file at key: 5qapqd7d8farjn6o4kdjakt5viuc (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI1cWFwcWQ3ZDhmYXJqbjZvNGtkamFrdDV2aXVjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUmFpbHMlM0YlM0YucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcnUmFpbHMlRTclOTQlQkIlRTUlODMlOEYucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0zMVQxNzowODozMS42NjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--356ed5c1dd7fc9adcfc1ff2444e058876c3cfc29/Rails%E7%94%BB%E5%83%8F.png)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI1cWFwcWQ3ZDhmYXJqbjZvNGtkamFrdDV2aXVjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUmFpbHMlM0YlM0YucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcnUmFpbHMlRTclOTQlQkIlRTUlODMlOEYucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0zMVQxNzowODozMS42NjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--356ed5c1dd7fc9adcfc1ff2444e058876c3cfc29/Rails%E7%94%BB%E5%83%8F.png
+Completed 302 Found in 88ms (ActiveRecord: 1.4ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 3 AND "active_storage_attachments"."record_type" = 'ActiveStorage::VariantRecord' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 6 LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: j5szj1d3v3xknyc0ey08u4flokvi (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqNXN6ajFkM3YzeGtueWMwZXkwOHU0Zmxva3ZpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNzMzWiIsInB1ciI6ImJsb2Jfa2V5In19--93e9a49b4ecda1bba7635be7b8a0f72a7b8ff72b/RubyLogo.jpg)[0m
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIzOGNkZXQyeGNicWFoemdud3JueG4zbnkwYnM2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaGFuMDIxNS0wNDkuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnaGFuMDIxNS0wNDkuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNTA5WiIsInB1ciI6ImJsb2Jfa2V5In19--dbd5989e952020f5851b2bc8d2a75f0b0cf2dcbc/han0215-049.jpg" for 127.0.0.1 at 2026-02-01 02:03:31 +0900
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqNXN6ajFkM3YzeGtueWMwZXkwOHU0Zmxva3ZpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNzMzWiIsInB1ciI6ImJsb2Jfa2V5In19--93e9a49b4ecda1bba7635be7b8a0f72a7b8ff72b/RubyLogo.jpg
+Completed 302 Found in 144ms (ActiveRecord: 1.5ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by ActiveStorage::Representations::RedirectController#show as PNG
+  Parameters: {"signed_blob_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NywicHVyIjoiYmxvYl9pZCJ9fQ==--92474223ced822d081bcfee46004444bdeaa0c76", "variation_key" => "[FILTERED]", "filename" => "RubyLogo"}
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI1cWFwcWQ3ZDhmYXJqbjZvNGtkamFrdDV2aXVjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUmFpbHMlM0YlM0YucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcnUmFpbHMlRTclOTQlQkIlRTUlODMlOEYucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0zMVQxNzowODozMS42NjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--356ed5c1dd7fc9adcfc1ff2444e058876c3cfc29/Rails%E7%94%BB%E5%83%8F.png" for 127.0.0.1 at 2026-02-01 02:03:31 +0900
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'ActiveStorage::VariantRecord' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 8 LIMIT 1 /*action='show',application='FruitShop',controller='redirect'*/[0m
+[36m  Disk Storage (0.6ms) [0m[34mGenerated URL for file at key: kxu6ajoisxwttj76vfp8c0my53ua (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJreHU2YWpvaXN4d3R0ajc2dmZwOGMwbXk1M3VhIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuODIxWiIsInB1ciI6ImJsb2Jfa2V5In19--7f13b8cd4bc96f8c7c08228736dd871e451dc889/RubyLogo.jpg)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJreHU2YWpvaXN4d3R0ajc2dmZwOGMwbXk1M3VhIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuODIxWiIsInB1ciI6ImJsb2Jfa2V5In19--7f13b8cd4bc96f8c7c08228736dd871e451dc889/RubyLogo.jpg
+Completed 302 Found in 71ms (ActiveRecord: 1.1ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqNXN6ajFkM3YzeGtueWMwZXkwOHU0Zmxva3ZpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNzMzWiIsInB1ciI6ImJsb2Jfa2V5In19--93e9a49b4ecda1bba7635be7b8a0f72a7b8ff72b/RubyLogo.jpg" for 127.0.0.1 at 2026-02-01 02:03:31 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "han0215-049"}
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Rails画像"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "RubyLogo"}
+Completed 200 OK in 24ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 24ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJreHU2YWpvaXN4d3R0ajc2dmZwOGMwbXk1M3VhIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuODIxWiIsInB1ciI6ImJsb2Jfa2V5In19--7f13b8cd4bc96f8c7c08228736dd871e451dc889/RubyLogo.jpg" for 127.0.0.1 at 2026-02-01 02:03:31 +0900
+Completed 200 OK in 37ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "RubyLogo"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:04:53 +0900
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (4.3ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 136.9ms | GC: 9.1ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 155.0ms | GC: 9.5ms)
+Completed 200 OK in 170ms (Views: 144.6ms | ActiveRecord: 13.1ms (15 queries, 0 cached) | GC: 10.7ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIzOGNkZXQyeGNicWFoemdud3JueG4zbnkwYnM2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaGFuMDIxNS0wNDkuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnaGFuMDIxNS0wNDkuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNTA5WiIsInB1ciI6ImJsb2Jfa2V5In19--dbd5989e952020f5851b2bc8d2a75f0b0cf2dcbc/han0215-049.jpg" for 127.0.0.1 at 2026-02-01 02:04:53 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI1cWFwcWQ3ZDhmYXJqbjZvNGtkamFrdDV2aXVjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUmFpbHMlM0YlM0YucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcnUmFpbHMlRTclOTQlQkIlRTUlODMlOEYucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0zMVQxNzowODozMS42NjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--356ed5c1dd7fc9adcfc1ff2444e058876c3cfc29/Rails%E7%94%BB%E5%83%8F.png" for 127.0.0.1 at 2026-02-01 02:04:53 +0900
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Rails画像"}
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqNXN6ajFkM3YzeGtueWMwZXkwOHU0Zmxva3ZpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNzMzWiIsInB1ciI6ImJsb2Jfa2V5In19--93e9a49b4ecda1bba7635be7b8a0f72a7b8ff72b/RubyLogo.jpg" for 127.0.0.1 at 2026-02-01 02:04:53 +0900
+Completed 304 Not Modified in 18ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJreHU2YWpvaXN4d3R0ajc2dmZwOGMwbXk1M3VhIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuODIxWiIsInB1ciI6ImJsb2Jfa2V5In19--7f13b8cd4bc96f8c7c08228736dd871e451dc889/RubyLogo.jpg" for 127.0.0.1 at 2026-02-01 02:04:53 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "han0215-049"}
+Completed 304 Not Modified in 11ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "RubyLogo"}
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 304 Not Modified in 12ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "RubyLogo"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2026-02-01 02:05:11 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 24.3ms | GC: 0.8ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | GC: 0.8ms)
+Completed 200 OK in 66ms (Views: 37.0ms | ActiveRecord: 2.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2026-02-01 02:05:11 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.6ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2026-02-01 02:05:17 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:31:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered products/show.html.erb within layouts/application (Duration: 23.6ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.1ms (4 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method 'admin_flg' for nil)
+Caused by: NoMethodError (undefined method 'admin_flg' for nil)
+
+Information for: ActionView::Template::Error (undefined method 'admin_flg' for nil):
+    12: </div>
+    13: 
+    14: <% if current_user.admin_flg %>
+    15:   <%= link_to "編集", edit_product_path(@product) %>
+    16:   <br>
+    17:   <%= link_to '削除', destroy_product_path(@product),  data: { turbo_method: :delete, turbo_confirm: '本当に削除しますか？' } %>
+    18: <% else %>
+  
+app/views/products/show.html.erb:15
+
+Information for cause: NoMethodError (undefined method 'admin_flg' for nil):
+  
+app/views/products/show.html.erb:15
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-02-01 02:05:30 +0900
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:05:30 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (4.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (2.6ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 150.0ms | GC: 10.6ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 164.3ms | GC: 10.6ms)
+Completed 200 OK in 190ms (Views: 156.6ms | ActiveRecord: 10.6ms (15 queries, 0 cached) | GC: 14.7ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI1cWFwcWQ3ZDhmYXJqbjZvNGtkamFrdDV2aXVjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUmFpbHMlM0YlM0YucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcnUmFpbHMlRTclOTQlQkIlRTUlODMlOEYucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0zMVQxNzowODozMS42NjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--356ed5c1dd7fc9adcfc1ff2444e058876c3cfc29/Rails%E7%94%BB%E5%83%8F.png" for 127.0.0.1 at 2026-02-01 02:05:30 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIzOGNkZXQyeGNicWFoemdud3JueG4zbnkwYnM2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaGFuMDIxNS0wNDkuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnaGFuMDIxNS0wNDkuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNTA5WiIsInB1ciI6ImJsb2Jfa2V5In19--dbd5989e952020f5851b2bc8d2a75f0b0cf2dcbc/han0215-049.jpg" for 127.0.0.1 at 2026-02-01 02:05:30 +0900
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Rails画像"}
+Completed 304 Not Modified in 19ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqNXN6ajFkM3YzeGtueWMwZXkwOHU0Zmxva3ZpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNzMzWiIsInB1ciI6ImJsb2Jfa2V5In19--93e9a49b4ecda1bba7635be7b8a0f72a7b8ff72b/RubyLogo.jpg" for 127.0.0.1 at 2026-02-01 02:05:30 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "han0215-049"}
+Completed 304 Not Modified in 16ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJreHU2YWpvaXN4d3R0ajc2dmZwOGMwbXk1M3VhIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuODIxWiIsInB1ciI6ImJsb2Jfa2V5In19--7f13b8cd4bc96f8c7c08228736dd871e451dc889/RubyLogo.jpg" for 127.0.0.1 at 2026-02-01 02:05:30 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "RubyLogo"}
+Completed 304 Not Modified in 15ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "RubyLogo"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2026-02-01 02:05:32 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:31:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.4ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered products/show.html.erb within layouts/application (Duration: 32.6ms | GC: 7.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | GC: 7.6ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.2ms (4 queries, 0 cached) | GC: 7.6ms)
+
+
+  
+ActionView::Template::Error (undefined method 'admin_flg' for nil)
+Caused by: NoMethodError (undefined method 'admin_flg' for nil)
+
+Information for: ActionView::Template::Error (undefined method 'admin_flg' for nil):
+    12: </div>
+    13: 
+    14: <% if current_user.admin_flg %>
+    15:   <%= link_to "編集", edit_product_path(@product) %>
+    16:   <br>
+    17:   <%= link_to '削除', destroy_product_path(@product),  data: { turbo_method: :delete, turbo_confirm: '本当に削除しますか？' } %>
+    18: <% else %>
+  
+app/views/products/show.html.erb:15
+
+Information for cause: NoMethodError (undefined method 'admin_flg' for nil):
+  
+app/views/products/show.html.erb:15
+Started GET "/products/2" for 127.0.0.1 at 2026-02-01 02:05:33 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:31:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered products/show.html.erb within layouts/application (Duration: 28.9ms | GC: 10.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | GC: 10.0ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.4ms (4 queries, 0 cached) | GC: 10.0ms)
+
+
+  
+ActionView::Template::Error (undefined method 'admin_flg' for nil)
+Caused by: NoMethodError (undefined method 'admin_flg' for nil)
+
+Information for: ActionView::Template::Error (undefined method 'admin_flg' for nil):
+    12: </div>
+    13: 
+    14: <% if current_user.admin_flg %>
+    15:   <%= link_to "編集", edit_product_path(@product) %>
+    16:   <br>
+    17:   <%= link_to '削除', destroy_product_path(@product),  data: { turbo_method: :delete, turbo_confirm: '本当に削除しますか？' } %>
+    18: <% else %>
+  
+app/views/products/show.html.erb:15
+
+Information for cause: NoMethodError (undefined method 'admin_flg' for nil):
+  
+app/views/products/show.html.erb:15
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:05:35 +0900
+Processing by HomesController#top as HTML
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-02-01 02:05:35 +0900
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.4ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 167.4ms | GC: 15.5ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 183.0ms | GC: 17.7ms)
+Completed 200 OK in 204ms (Views: 190.3ms | ActiveRecord: 4.2ms (15 queries, 0 cached) | GC: 17.7ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqNXN6ajFkM3YzeGtueWMwZXkwOHU0Zmxva3ZpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNzMzWiIsInB1ciI6ImJsb2Jfa2V5In19--93e9a49b4ecda1bba7635be7b8a0f72a7b8ff72b/RubyLogo.jpg" for 127.0.0.1 at 2026-02-01 02:05:36 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIzOGNkZXQyeGNicWFoemdud3JueG4zbnkwYnM2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaGFuMDIxNS0wNDkuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnaGFuMDIxNS0wNDkuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNTA5WiIsInB1ciI6ImJsb2Jfa2V5In19--dbd5989e952020f5851b2bc8d2a75f0b0cf2dcbc/han0215-049.jpg" for 127.0.0.1 at 2026-02-01 02:05:36 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "RubyLogo"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "han0215-049"}
+Completed 304 Not Modified in 15ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 304 Not Modified in 16ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI1cWFwcWQ3ZDhmYXJqbjZvNGtkamFrdDV2aXVjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUmFpbHMlM0YlM0YucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcnUmFpbHMlRTclOTQlQkIlRTUlODMlOEYucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0zMVQxNzowODozMS42NjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--356ed5c1dd7fc9adcfc1ff2444e058876c3cfc29/Rails%E7%94%BB%E5%83%8F.png" for 127.0.0.1 at 2026-02-01 02:05:36 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJreHU2YWpvaXN4d3R0ajc2dmZwOGMwbXk1M3VhIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuODIxWiIsInB1ciI6ImJsb2Jfa2V5In19--7f13b8cd4bc96f8c7c08228736dd871e451dc889/RubyLogo.jpg" for 127.0.0.1 at 2026-02-01 02:05:36 +0900
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Rails画像"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "RubyLogo"}
+Completed 304 Not Modified in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 304 Not Modified in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2026-02-01 02:05:48 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "2"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:31:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered products/show.html.erb within layouts/application (Duration: 19.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.1ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method 'admin_flg' for nil)
+Caused by: NoMethodError (undefined method 'admin_flg' for nil)
+
+Information for: ActionView::Template::Error (undefined method 'admin_flg' for nil):
+    12: </div>
+    13: 
+    14: <% if current_user.admin_flg %>
+    15:   <%= link_to "編集", edit_product_path(@product) %>
+    16:   <br>
+    17:   <%= link_to '削除', destroy_product_path(@product),  data: { turbo_method: :delete, turbo_confirm: '本当に削除しますか？' } %>
+    18: <% else %>
+  
+app/views/products/show.html.erb:15
+
+Information for cause: NoMethodError (undefined method 'admin_flg' for nil):
+  
+app/views/products/show.html.erb:15
+Started GET "/products/2" for 127.0.0.1 at 2026-02-01 02:05:49 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "2"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:31:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.4ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered products/show.html.erb within layouts/application (Duration: 33.9ms | GC: 15.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | GC: 15.8ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 2.5ms (4 queries, 0 cached) | GC: 15.8ms)
+
+
+  
+ActionView::Template::Error (undefined method 'admin_flg' for nil)
+Caused by: NoMethodError (undefined method 'admin_flg' for nil)
+
+Information for: ActionView::Template::Error (undefined method 'admin_flg' for nil):
+    12: </div>
+    13: 
+    14: <% if current_user.admin_flg %>
+    15:   <%= link_to "編集", edit_product_path(@product) %>
+    16:   <br>
+    17:   <%= link_to '削除', destroy_product_path(@product),  data: { turbo_method: :delete, turbo_confirm: '本当に削除しますか？' } %>
+    18: <% else %>
+  
+app/views/products/show.html.erb:15
+
+Information for cause: NoMethodError (undefined method 'admin_flg' for nil):
+  
+app/views/products/show.html.erb:15
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:05:59 +0900
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.4ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.4ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.5ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 76.2ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 80.7ms | GC: 0.0ms)
+Completed 200 OK in 83ms (Views: 77.1ms | ActiveRecord: 4.5ms (15 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2026-02-01 02:06:00 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 18.2ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | GC: 0.0ms)
+Completed 200 OK in 40ms (Views: 26.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2026-02-01 02:06:02 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.0ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2026-02-01 02:06:05 +0900
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}, "commit" => "ログイン"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'h_ishimaru@libertyfish.co.jp' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='FruitShop',controller='sessions'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='FruitShop',controller='sessions'*/[0m
+  [1m[36mUser Update (2.2ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = 15, "current_sign_in_at" = '2026-01-31 17:06:05.325943', "last_sign_in_at" = '2026-01-31 16:07:56.857223', "updated_at" = '2026-01-31 17:06:05.326348' WHERE "users"."id" = 1 /*action='create',application='FruitShop',controller='sessions'*/[0m
+  [1m[36mTRANSACTION (8.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='FruitShop',controller='sessions'*/[0m
+Redirected to http://127.0.0.1:3000/mypage/1
+Completed 303 See Other in 279ms (ActiveRecord: 11.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/mypage/1" for 127.0.0.1 at 2026-02-01 02:06:05 +0900
+Processing by MypageController#show as TURBO_STREAM
+  Parameters: {"id" => "1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='FruitShop',controller='mypage'*/[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='mypage'*/[0m
+  ↳ app/controllers/mypage_controller.rb:7:in 'MypageController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering mypage/show.html.erb within layouts/application
+  Rendered mypage/show.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 0.0ms)
+Completed 200 OK in 32ms (Views: 11.2ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:06:08 +0900
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 95.1ms | GC: 3.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/layouts/application.html.erb:33
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 103.9ms | GC: 3.2ms)
+Completed 200 OK in 119ms (Views: 110.3ms | ActiveRecord: 4.3ms (16 queries, 0 cached) | GC: 4.9ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2026-02-01 02:06:10 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:31:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:15
+  Rendered products/show.html.erb within layouts/application (Duration: 33.7ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | GC: 2.2ms)
+Completed 200 OK in 58ms (Views: 44.9ms | ActiveRecord: 4.1ms (5 queries, 0 cached) | GC: 2.2ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2026-02-01 02:06:10 +0900
+Processing by ProductsController#edit as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='edit',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:67:in 'ProductsController#check_admin'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='edit',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:36:in 'ProductsController#edit'
+  Rendering layout layouts/application.html.erb
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/edit.html.erb within layouts/application (Duration: 11.7ms | GC: 1.8ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | GC: 1.8ms)
+Completed 200 OK in 54ms (Views: 17.2ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:06:15 +0900
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.6ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (2.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 116.9ms | GC: 8.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/layouts/application.html.erb:33
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 127.8ms | GC: 8.0ms)
+Completed 200 OK in 131ms (Views: 121.3ms | ActiveRecord: 7.8ms (16 queries, 0 cached) | GC: 8.0ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2026-02-01 02:06:17 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:31:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.4ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:15
+  Rendered products/show.html.erb within layouts/application (Duration: 23.0ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 27.2ms | ActiveRecord: 1.7ms (5 queries, 0 cached) | GC: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:06:22 +0900
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (3.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (2.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 107.2ms | GC: 0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/layouts/application.html.erb:33
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 113.0ms | GC: 0.0ms)
+Completed 200 OK in 117ms (Views: 104.3ms | ActiveRecord: 10.2ms (16 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/mypage/1" for 127.0.0.1 at 2026-02-01 02:06:23 +0900
+Processing by MypageController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='FruitShop',controller='mypage'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='mypage'*/[0m
+  ↳ app/controllers/mypage_controller.rb:7:in 'MypageController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering mypage/show.html.erb within layouts/application
+  Rendered mypage/show.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | GC: 0.0ms)
+Completed 200 OK in 22ms (Views: 8.0ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2026-02-01 02:06:24 +0900
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='FruitShop',controller='orders'*/[0m
+  ↳ app/controllers/orders_controller.rb:42:in 'OrdersController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "orders" WHERE "orders"."user_id" = 1 LIMIT 1 /*action='index',application='FruitShop',controller='orders'*/[0m
+  ↳ app/views/orders/index.html.erb:4
+  Rendered orders/index.html.erb within layouts/application (Duration: 4.7ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 11.5ms | ActiveRecord: 1.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2026-02-01 02:06:24 +0900
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered products/index.html.erb within layouts/application (Duration: 91.9ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 104.0ms | GC: 0.0ms)
+Completed 200 OK in 112ms (Views: 102.8ms | ActiveRecord: 4.3ms (16 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2026-02-01 02:06:32 +0900
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.4ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered products/index.html.erb within layouts/application (Duration: 89.0ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 92.7ms | GC: 0.0ms)
+Completed 200 OK in 95ms (Views: 87.7ms | ActiveRecord: 5.8ms (16 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2026-02-01 02:06:34 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:31:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:7
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:15
+  Rendered products/show.html.erb within layouts/application (Duration: 27.3ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | GC: 0.0ms)
+Completed 200 OK in 45ms (Views: 35.2ms | ActiveRecord: 3.2ms (5 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2026-02-01 02:06:44 +0900
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered products/index.html.erb within layouts/application (Duration: 89.1ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 93.6ms | GC: 0.0ms)
+Completed 200 OK in 97ms (Views: 90.0ms | ActiveRecord: 4.9ms (16 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:06:44 +0900
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (3.7ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.7ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 100.3ms | GC: 0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/layouts/application.html.erb:33
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 119.8ms | GC: 0.0ms)
+Completed 200 OK in 125ms (Views: 111.7ms | ActiveRecord: 9.6ms (16 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2026-02-01 02:06:47 +0900
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='FruitShop',controller='orders'*/[0m
+  ↳ app/controllers/orders_controller.rb:42:in 'OrdersController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "orders" WHERE "orders"."user_id" = 1 LIMIT 1 /*action='index',application='FruitShop',controller='orders'*/[0m
+  ↳ app/views/orders/index.html.erb:4
+  Rendered orders/index.html.erb within layouts/application (Duration: 2.6ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/mypage/1" for 127.0.0.1 at 2026-02-01 02:06:47 +0900
+Processing by MypageController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='FruitShop',controller='mypage'*/[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='mypage'*/[0m
+  ↳ app/controllers/mypage_controller.rb:7:in 'MypageController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering mypage/show.html.erb within layouts/application
+  Rendered mypage/show.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 36ms (Views: 5.1ms | ActiveRecord: 1.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/users/sign_out?_method=delete" for 127.0.0.1 at 2026-02-01 02:06:49 +0900
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='destroy',application='FruitShop',controller='sessions'*/[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 33ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:06:49 +0900
+Processing by HomesController#top as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (1.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.6ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 78.0ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 84.3ms | GC: 0.0ms)
+Completed 200 OK in 87ms (Views: 80.6ms | ActiveRecord: 5.4ms (15 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:06:52 +0900
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (1.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 80.8ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 87.6ms | GC: 0.0ms)
+Completed 200 OK in 90ms (Views: 81.5ms | ActiveRecord: 7.0ms (15 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2026-02-01 02:06:53 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:31:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered products/show.html.erb within layouts/application (Duration: 22.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 2.0ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method 'admin_flg' for nil)
+Caused by: NoMethodError (undefined method 'admin_flg' for nil)
+
+Information for: ActionView::Template::Error (undefined method 'admin_flg' for nil):
+    12: </div>
+    13: 
+    14: <% if current_user.admin_flg %>
+    15:   <%= link_to "編集", edit_product_path(@product) %>
+    16:   <br>
+    17:   <%= link_to '削除', destroy_product_path(@product),  data: { turbo_method: :delete, turbo_confirm: '本当に削除しますか？' } %>
+    18: <% else %>
+  
+app/views/products/show.html.erb:15
+
+Information for cause: NoMethodError (undefined method 'admin_flg' for nil):
+  
+app/views/products/show.html.erb:15
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:06:57 +0900
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-02-01 02:06:57 +0900
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (9.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.4ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 127.6ms | GC: 3.2ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 154.7ms | GC: 11.0ms)
+Completed 200 OK in 162ms (Views: 146.3ms | ActiveRecord: 14.2ms (15 queries, 0 cached) | GC: 13.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI1cWFwcWQ3ZDhmYXJqbjZvNGtkamFrdDV2aXVjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUmFpbHMlM0YlM0YucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcnUmFpbHMlRTclOTQlQkIlRTUlODMlOEYucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0zMVQxNzowODozMS42NjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--356ed5c1dd7fc9adcfc1ff2444e058876c3cfc29/Rails%E7%94%BB%E5%83%8F.png" for 127.0.0.1 at 2026-02-01 02:06:57 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIzOGNkZXQyeGNicWFoemdud3JueG4zbnkwYnM2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaGFuMDIxNS0wNDkuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnaGFuMDIxNS0wNDkuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNTA5WiIsInB1ciI6ImJsb2Jfa2V5In19--dbd5989e952020f5851b2bc8d2a75f0b0cf2dcbc/han0215-049.jpg" for 127.0.0.1 at 2026-02-01 02:06:57 +0900
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Rails画像"}
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 304 Not Modified in 13ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "han0215-049"}
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqNXN6ajFkM3YzeGtueWMwZXkwOHU0Zmxva3ZpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuNzMzWiIsInB1ciI6ImJsb2Jfa2V5In19--93e9a49b4ecda1bba7635be7b8a0f72a7b8ff72b/RubyLogo.jpg" for 127.0.0.1 at 2026-02-01 02:06:57 +0900
+Completed 304 Not Modified in 19ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "RubyLogo"}
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJreHU2YWpvaXN4d3R0ajc2dmZwOGMwbXk1M3VhIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUnVieUxvZ28uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUnVieUxvZ28uanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMzFUMTc6MDg6MzEuODIxWiIsInB1ciI6ImJsb2Jfa2V5In19--7f13b8cd4bc96f8c7c08228736dd871e451dc889/RubyLogo.jpg" for 127.0.0.1 at 2026-02-01 02:06:57 +0900
+Completed 304 Not Modified in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "RubyLogo"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2026-02-01 02:06:58 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.1ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 14.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2026-02-01 02:06:58 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.4ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | GC: 0.0ms)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2026-02-01 02:07:00 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2026-02-01 02:07:00 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2026-02-01 02:07:18 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.9ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 19.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2026-02-01 02:07:20 +0900
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}, "commit" => "ログイン"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'bbbbbb@bbbbbb' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='FruitShop',controller='sessions'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='FruitShop',controller='sessions'*/[0m
+  [1m[36mUser Update (2.2ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = 15, "current_sign_in_at" = '2026-01-31 17:07:20.865133', "last_sign_in_at" = '2026-01-31 16:15:31.625899', "updated_at" = '2026-01-31 17:07:20.865438' WHERE "users"."id" = 4 /*action='create',application='FruitShop',controller='sessions'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='FruitShop',controller='sessions'*/[0m
+Redirected to http://127.0.0.1:3000/mypage/4
+Completed 303 See Other in 267ms (ActiveRecord: 3.1ms (2 queries, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/mypage/4" for 127.0.0.1 at 2026-02-01 02:07:20 +0900
+Processing by MypageController#show as TURBO_STREAM
+  Parameters: {"id" => "4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='FruitShop',controller='mypage'*/[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1 /*action='show',application='FruitShop',controller='mypage'*/[0m
+  ↳ app/controllers/mypage_controller.rb:7:in 'MypageController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering mypage/show.html.erb within layouts/application
+  Rendered mypage/show.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 4.1ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:07:22 +0900
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.4ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 74.8ms | GC: 5.3ms)
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/layouts/application.html.erb:33
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_viewed_products.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 91.0ms | GC: 12.2ms)
+Completed 200 OK in 94ms (Views: 81.1ms | ActiveRecord: 11.2ms (16 queries, 0 cached) | GC: 12.2ms)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2026-02-01 02:07:26 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "4"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 4 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:31:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:15
+  Rendered products/show.html.erb within layouts/application (Duration: 22.4ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 4 LIMIT 1[0m
+  ↳ app/views/layouts/_viewed_products.html.erb:6
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1[0m
+  ↳ app/views/layouts/_viewed_products.html.erb:8
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mCACHE ActiveStorage::VariantRecord Load (0.0ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered layouts/_viewed_products.html.erb (Duration: 16.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | GC: 2.7ms)
+Completed 200 OK in 50ms (Views: 45.2ms | ActiveRecord: 1.4ms (9 queries, 4 cached) | GC: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:07:31 +0900
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 133.8ms | GC: 2.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/layouts/application.html.erb:33
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+Started GET "/products" for 127.0.0.1 at 2026-02-01 02:07:31 +0900
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 4 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/layouts/_viewed_products.html.erb:6
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1[0m
+  ↳ app/views/layouts/_viewed_products.html.erb:8
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mCACHE ActiveStorage::VariantRecord Load (0.0ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+Processing by ProductsController#index as HTML
+  Rendered layouts/_viewed_products.html.erb (Duration: 39.2ms | GC: 1.0ms)
+  Rendering layout layouts/application.html.erb
+  Rendered layout layouts/application.html.erb (Duration: 194.4ms | GC: 3.6ms)
+  Rendering products/index.html.erb within layouts/application
+Completed 200 OK in 198ms (Views: 189.8ms | ActiveRecord: 5.9ms (20 queries, 3 cached) | GC: 3.6ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered products/index.html.erb within layouts/application (Duration: 139.6ms | GC: 2.6ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 4 LIMIT 1 /*action='index',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/layouts/_viewed_products.html.erb:6
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1[0m
+  ↳ app/views/layouts/_viewed_products.html.erb:8
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mCACHE ActiveStorage::VariantRecord Load (0.0ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered layouts/_viewed_products.html.erb (Duration: 24.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 177.5ms | GC: 2.6ms)
+Completed 200 OK in 180ms (Views: 173.6ms | ActiveRecord: 5.0ms (20 queries, 3 cached) | GC: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-01 02:07:32 +0900
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 3 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/homes/top.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 7 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered homes/top.html.erb within layouts/application (Duration: 78.3ms | GC: 1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/layouts/application.html.erb:33
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 4 LIMIT 1 /*action='top',application='FruitShop',controller='homes'*/[0m
+  ↳ app/views/layouts/_viewed_products.html.erb:6
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1[0m
+  ↳ app/views/layouts/_viewed_products.html.erb:8
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mCACHE ActiveStorage::VariantRecord Load (0.0ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered layouts/_viewed_products.html.erb (Duration: 16.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 108.5ms | GC: 1.2ms)
+Completed 200 OK in 128ms (Views: 107.4ms | ActiveRecord: 4.6ms (20 queries, 3 cached) | GC: 1.2ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2026-02-01 02:07:35 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:31:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/products/show.html.erb:15
+  Rendered products/show.html.erb within layouts/application (Duration: 27.8ms | GC: 0.0ms)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" IN (2, 4) /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/layouts/_viewed_products.html.erb:6
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1[0m
+  ↳ app/views/layouts/_viewed_products.html.erb:8
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mCACHE ActiveStorage::VariantRecord Load (0.0ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 1 AND "active_storage_variant_records"."variation_digest" = 'G0Vst4geCVOXNaQRJ+bGaGFNhTs=' LIMIT 1[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Product' AND "active_storage_attachments"."name" = 'photo' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/views/layouts/_viewed_products.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = 5 AND "active_storage_variant_records"."variation_digest" = 'W3rQbiDVl3RX0dJoKIDlgkZ9b4A=' LIMIT 1 /*action='show',application='FruitShop',controller='products'*/[0m
+  ↳ app/models/product.rb:14:in 'Product#thumbnail'
+  Rendered layouts/_viewed_products.html.erb (Duration: 36.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 70.1ms | GC: 0.0ms)
+Completed 200 OK in 76ms (Views: 69.1ms | ActiveRecord: 2.8ms (12 queries, 3 cached) | GC: 0.0ms)
+
+

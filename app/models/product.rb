@@ -4,6 +4,8 @@ class Product < ApplicationRecord
 
     has_many :orders
 
+     has_many :cart_items
+
     # Active Storage（商品画像）
     has_one_attached :photo
 
