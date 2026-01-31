@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSSの適用例</title>
+  <link rel="stylesheet" href="style.css">  <!-- CSSファイルを指定 -->
+  <style>
+  h1 {
+  color: red; /* 文字を赤にする */
+}
+.class_a {
+  font-size: 80px;  /* 文字サイズを80pxにする */
+}
+.class_b {
+  color: blue; /* 文字を赤にする */
+}
+.class_c {
+  background-image: url('Rails画像.png');
+}
+#smp01 {
+  background-color: yellow; /* 背景色を黄色にする */
+}
+#smp02 {
+  background-color: green; /* 背景色を黄色にする */
+}
+  </style>
+</head>
+<body>
+
+  <h1>これは見出し（h1）です</h1>
+
+  <p class="class_a class_b class_c">このテキストはclass名が "sample-class" です。</p>
+
+  <div id="smp01">
+    <p>このテキストの親要素は div(idが"sample_id-0") です。</p>
+  </div>
+  <div id="smp02">
+    <p>このテキストの親要素は div(idが"sample_id-0") です。</p>
+  </div>
+
+</body>
+</html>
