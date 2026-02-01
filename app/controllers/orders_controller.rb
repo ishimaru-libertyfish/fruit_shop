@@ -42,7 +42,11 @@ class OrdersController < ApplicationController
     @orders = current_user.orders.all # ユーザーに紐付いた注文履歴を表示
   end
 
-
+  def new
+    @order = Order.new   # 新しい注文オブジェクトを作成
+    @cart_items = current_user.cart.cart_items.includes(:product)  # カート内の商品情報を取得
+    user_cart_calculation
+  end
 
   private
 
