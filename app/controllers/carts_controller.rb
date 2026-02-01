@@ -36,7 +36,7 @@ class CartsController < ApplicationController
     end
 
     cart_calculation
-    pp session[:cart]
+  #  pp session[:cart]
     
     redirect_to carts_path, notice: '商品がカートに追加されました。'
   end

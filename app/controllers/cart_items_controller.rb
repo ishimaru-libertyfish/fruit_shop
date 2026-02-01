@@ -1,5 +1,5 @@
 class CartItemsController < ApplicationController
-      def create
+  def create
     # ユーザーのカートを取得
     cart = current_user.cart
     
@@ -48,5 +48,6 @@ class CartItemsController < ApplicationController
   def cart_item_params
     params.require(:cart_item).permit(:product_id, :quantity)
   end
+
 end
-end
+

@@ -1,34 +1,31 @@
 Rails.application.routes.draw do
 
-  get "mypage/show"
+  #get "mypage/show"
+
   devise_for :users
+
   #get "products/new"
   #post "products", to: "products#create"
   #get 'products', to: 'products#index'
   #get 'products/:id', to: 'products#show', as: 'product'
   #get 'products/:id/edit', to: 'products#edit', as: 'edit_product'
   #patch 'products/:id', to: 'products#update'
-  
-   resources :products
-   delete 'products/:id', to: 'products#destroy', as: 'destroy_product'
+  resources :products
+  delete 'products/:id', to: 'products#destroy', as: 'destroy_product'
    
-
   root to: "homes#top"
+
   resources :mypage, only: [:show] # ユーザ情報の詳細表示
-
-
 
   # 注文関連
   resources :orders, only: [:index, :new, :create] do 
     collection do
       post :confirm   # 注文確認
     end
-
     member do
       get :complete  # 注文完了
     end
   end
-
 
   resources :carts, only: [:show, :index] do
   # セッションカートに商品を追加、数量を更新、商品を削除するアクション
@@ -40,6 +37,9 @@ Rails.application.routes.draw do
       post :update_quantity  # カート内の商品数を変更
     end
   end
+  
+# ユーザーのカート内の商品操作
+  resources :cart_items, only: [:create, :update, :destroy]  # 追加
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
