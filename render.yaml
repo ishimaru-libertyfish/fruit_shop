@@ -1,7 +1,7 @@
 databases:
   - name: ishimaru_DB  # 編集 (Renderで作成したデータベース名)
-    databaseName: example_db_ishimaru_db  # 編集 (Renderで作成したデータベースのところにあるInfo>Connections>Database)
-    user: example_db_ishimaru_user  # 編集 (Renderで作成したデータベースのところにあるInfo>Connections>Username)
+    databaseName: ishimaru_db  # 編集 (Renderで作成したデータベースのところにあるInfo>Connections>Database)
+    user: ishimaru  # 編集 (Renderで作成したデータベースのところにあるInfo>Connections>Username)
     region: singapore
 
 services:
