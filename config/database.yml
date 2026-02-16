@@ -25,7 +25,7 @@ test:
 production:
   primary:
     <<: *default
-  #  database: storage/production.sqlite3
+    #  database: storage/production.sqlite3
     adapter: postgresql  # PostgreSQLに変更
     encoding: unicode  # エンコーディング設定 追加
     pool: <%= ENV.fetch("RAILS_MAX_THREADS", 5) %>  # 接続数設定 追加
@@ -33,22 +33,22 @@ production:
 
   cache:
     <<: *default
-  #  database: storage/production_cache.sqlite3
-  #  migrations_paths: db/cache_migrate
+    #  database: storage/production_cache.sqlite3
+    #  migrations_paths: db/cache_migrate
     adapter: postgresql  # PostgreSQLに変更
     url: <%= ENV["DATABASE_URL"] %>  # 環境変数 追加 Renderで設定
 
   queue:
     <<: *default
-  #  database: storage/production_queue.sqlite3
-  #  migrations_paths: db/queue_migrate
-  adapter: postgresql  # PostgreSQLに変更
-  url: <%= ENV["DATABASE_URL"] %>  # 環境変数 追加 Renderで設定
+    #  database: storage/production_queue.sqlite3
+    #  migrations_paths: db/queue_migrate
+    adapter: postgresql  # PostgreSQLに変更
+    url: <%= ENV["DATABASE_URL"] %>  # 環境変数 追加 Renderで設定
 
   cable:
     <<: *default
-  #  database: storage/production_cable.sqlite3
-  #  migrations_paths: db/cable_migrate
-  adapter: postgresql  # PostgreSQLに変更
-  url: <%= ENV["DATABASE_URL"] %>  # 環境変数 追加 Renderで設定
+    #  database: storage/production_cable.sqlite3
+    #  migrations_paths: db/cable_migrate
+    adapter: postgresql  # PostgreSQLに変更
+    url: <%= ENV["DATABASE_URL"] %>  # 環境変数 追加 Renderで設定
 
