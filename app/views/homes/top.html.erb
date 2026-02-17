@@ -5,9 +5,9 @@
 <h2>商品一覧</h2>
 
 <% @products.each do |product| %>
-    <% if product.photo.attached? %>
-      <%= image_tag product.thumbnail %>
-    <% end %>
+   <%# if product.photo.attached? %>  
+     <%#= image_tag product.thumbnail %> 
+   <%# end %>  
     <br>
     <%= link_to product.name, product_path(product) %> 
     <br> 

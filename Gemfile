@@ -58,6 +58,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+
 end
 
 group :test do
@@ -67,7 +68,7 @@ group :test do
 end
 
  # Devise
- gem "devise"
+gem "devise"
 
  # Enum
 gem 'enum_help'
@@ -79,4 +80,4 @@ gem 'ransack'
 
 group :production do  # 追加
    gem 'pg', '~> 1.5.6'  # 追加
- end # 追加
+end # 追加
