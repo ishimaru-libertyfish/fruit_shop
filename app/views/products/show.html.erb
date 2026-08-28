@@ -8,4 +8,5 @@
   <p>価格: <%= @product.price %>円</p>
 </div>
 <%= link_to "編集", edit_product_path(@product) %>
-<%= link_to '削除', product_path(@product),  data: { turbo_method: :delete, turbo_confirm: '本当に削除しますか？' } %>
+
+<%= link_to '削除', product_path(@product), data: { turbo_method: :delete, turbo_confirm: '本当に削除しますか？' } %>
